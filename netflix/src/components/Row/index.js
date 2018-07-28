@@ -22,7 +22,7 @@ class Row extends Component {
             <MyList data={item} removeItem={this.removeItem} />
           ))}
         </ul>
-        <h3>Recommendation</h3>
+        <h3>Recommendations</h3>
         <ul className="row-content">
           {this.props.recommendations.map(item => (
             <Recommendation data={item} addItem={this.addItem} />
