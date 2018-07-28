@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background: black;
+}
+
+.header {
+  background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/netflix-background-9.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.header-layer {
+  background: linear-gradient(to right, black, black 70%, grey);
+  opacity: 0.7;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  height: 500px;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.subheader {
+  position: absolute;
+  font-family: "default", cursive;
+  font-size: 60px;
+  top: 200px;
+  left: 100px;
+  color: white;
+  z-index: 4;
+}
+
+.subheader p {
+  font-size: 20px;
+}
+
+#netflix-logo {
+  position: absolute;
+  z-index: 2;
+  left: 100px;
+  top: 20px;
+  width: 280px;
+  height: 120px;
+  fill: red;
+  font-size: 60px;
+}
+
+.main-content {
+  color: white;
+  margin: 20px;
+}
+
+.row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row-content {
+  display: flex;
+  overflow-x: auto;
+  border-top: 2px solid white;
+}
+
+.tooltip {
+  text-align: center;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+button {
+  padding: 0.5vw 1vw;
+  position: relative;
+  border-radius: 2vw;
+  font-size: 1vw;
+  transition-duration: 0.5s;
+}
+
+.add:hover {
+  background-color: rgb(42, 173, 42);
+  color: white;
+}
+
+.remove:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 1vw 1vw;
+}
