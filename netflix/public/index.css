@@ -5,7 +5,7 @@ body {
 
 .header {
   background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/netflix-background-9.jpg");
-  height: 500px;
+  height: 1200px;
   width: 100%;
   background-size: 100% 100%;
 }
@@ -16,33 +16,35 @@ body {
   z-index: 1;
   position: absolute;
   top: 0;
-  height: 500px;
+  height: 1200px;
   width: 100%;
   background-size: 100% 100%;
 }
 
 .subheader {
   position: absolute;
-  font-family: "default", cursive;
-  font-size: 60px;
-  top: 200px;
-  left: 100px;
+  font-family: "Helvetica", cursive;
+  font-size: 90px;
+  font-weight:bold;
+  top: 500px;
+  left: 50px;
   color: white;
   z-index: 4;
 }
 
 .subheader p {
-  font-size: 20px;
+  font: "sans-serif";
+  font-size: 30px;
 }
 
 #netflix-logo {
   position: absolute;
   z-index: 2;
-  left: 100px;
+  left: 50px;
   top: 20px;
   width: 280px;
   height: 120px;
-  fill: red;
+  fill: rgb(221, 19, 19);
   font-size: 60px;
 }
 
