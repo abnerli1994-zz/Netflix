@@ -7,7 +7,7 @@ class App extends Component {
       <div className="wrapper">
         <div className="header">
           <svg
-            viewBox="0 0 111 30"
+            viewBox="0 0 190 75"
             id="netflix-logo"
             width="100%"
             height="100%"
