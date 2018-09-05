@@ -41,20 +41,31 @@ const reducer = (state = initialState, action) => {
     case "ADD_ITEM":
       if (state.mylist.filter(item => item.id === action.id).length === 0) {
         return {
-          recommendations: [...state.recommendations],
           mylist: [
             state.recommendations.filter(item => item.id === action.id)[0],
             ...state.mylist
+          ],
+          recommendations: [
+            ...state.recommendations.filter(item => item.id !== action.id)
           ]
         };
       } else {
         return state;
       }
     case "REMOVE_ITEM":
+    if (state.recommendations.filter(item => item.id === action.id).length === 0) {
       return {
-        recommendations: [...state.recommendations],
-        mylist: state.mylist.filter(item => item.id !== action.id)
+        recommendations: [
+          state.mylist.filter(item => item.id === action.id)[0],
+          ...state.recommendations
+        ],
+        mylist: [
+          ...state.mylist.filter(item => item.id !== action.id)
+        ]
       };
+    } else {
+      return state;
+    }
     default:
       return state;
   }
