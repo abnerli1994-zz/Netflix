@@ -61,7 +61,6 @@ body {
 .row-content {
   display: flex;
   overflow-x: auto;
-  border-top: 2px solid white;
 }
 
 .tooltip {
